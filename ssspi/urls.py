@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('formsim/', include('formapp.urls')),
+    path('',views.index,name='index'),
 ]
